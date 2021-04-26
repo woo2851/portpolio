@@ -3,13 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sungmin's portpolio</title>
+  <title>Danny's portpolio</title>
   <script src="https://kit.fontawesome.com/3c849001f3.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <!-- nav var -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+        <i class="fas fa-atom"></i>
+        <a href="#">Danny</a>
+    </div class = "navbar__menu">
+      <ul class = "navbar__menu">
+        <li class="navbar__menu__item" data-link = "#home">Home</li>
+        <li class="navbar__menu__item" data-link = "#about">About</li>
+        <li class="navbar__menu__item" data-link = "#skills">Skills</li>
+        <li class="navbar__menu__item" data-link = "#work">My Work</li>
+        <li class="navbar__menu__item" data-link = "#testimonials">Testimonials</li>
+        <li class="navbar__menu__item" data-link = "#contact">Contact</li>
+      </ul>
+
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+  <section id="home">
+    <div class="home__container">
+      <img 
+      src="profile.png" 
+      alt="Danny's profile picture" 
+      class = "home__avatar">
+      <h1 class="home__title">Hello <br>I'm travler</h1>
+      <h2 class="home__description">A unvi student currently studying in Software Engineering</h2>
+      <button class="home__contact scroll__contact--home">CONTACT ME</button>
+    </div>
+  </section>
+  <section id="about" class="section section__container">
+    <h1>About me</h1>
+    <p>Future Software Engineer</p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="major__title">Front-end</div>
+        <div class="major__description">HTML, CSS, JavaScript</div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-language"></i>
+        </div>
+        <div class="major__title">Languaes</div>
+        <div class="major__description">Korean, English, Japanese</div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-python"></i>
+        </div>
+        <div class="major__title"> Python</div>
+        <div class="major__description">I've learned Python</div>
+      </div>
+    </div>
+    <div class="about__schools">
+      <div class="school">
+        <img src="school.png" alt="" class="school__logo">
+        <div class="job__description">
+          <p class="school__name">sunmoon univ</p>
+          <p class="school__period">2018 ~</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p><br>I've learned Python and currently studying in Front-end</p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>50%</span>
+            </div>
+              <div class="skill__bar">
+                <div class="skill__value"></div>
+              </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+                  <span>Python</span>
+                  <span>50%</span>
+            </div>
+                  <div class="skill__bar">
+                    <div class="skill__value"></div>
+                  </div>
+          </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Python</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+          <ul>
+            <li><span>Git</span></li>
+          </ul>
+          </div>
+        </div>
+  </section>
+  <section id="work" class="section">
+    <section id="work" class="section">
+      <div class="section__container">
+          <h1>My work</h1>
+          <h3>Projects</h3>
+          <div class="work__categories">
+            <button class="category__btn selected" data-filter="*">
+            All <span class="category__count">8</span>
+            </button>
+            <button class="category__btn" data-filter="front-end">
+            Front-end <span class="category__count">3</span>
+            </button>
+            <button class="category__btn" data-filter="back-end">
+            Back-end <span class="category__count">2</span>
+            </button>
+            <button class="category__btn" data-filter="mobile">
+            Mobile <span class="category__count">3</span>
+            </button>
+          </div>
+            <div class="work__projects">
+            <a href="" class="project" target="blank" data-type="front-end">
+            <img
+              src="./project1.png"
+              alt="Youtube"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML, CSS</span>
+            </div>
+            </a>
+            <a
+            href="https://github.com/woo2851/portpolio"
+            class="project"
+            data-type="front-end"
+            target="blank"
+            >
+            <img
+              class="project__img"
+              src="./project2.png"
+              alt="navbar"
+            />
+            <div class="project__description">
+              <h3>Responsive Navbar</h3>
+              <span>HTML, CSS with media query</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/woo2851/portpolio"
+            class="project"
+            data-type="front-end"
+            target="blank"
+          >
+            <img class="project__img" src="./project3.png" alt="navbar" />
+            <div class="project__description">
+              <h3>Shopping mall game</h3>
+              <span>HTML, CSS, JavaScript, Json</span>
+            </div>
+            </a>
+            <a href="" class="project" data-type="back-end">
+            <img class="project__img" src="./project4.png" alt="" />
+            <div class="project__description">
+              <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+          <a href="" class="project" data-type="back-end">
+            <img class="project__img" src="./project5.png" alt="" width="200px" height="250px"/>
+            <div class="project__description">
+              <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+          <a href="" class="project" data-type="mobile">
+            <img class="project__img" src="./project6.png" alt="" />
+            <div class="project__description">
+            <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+          <a href="" class="project" data-type="mobile">
+            <img class="project__img" src="./project7.png" alt="" />
+              <div class="project__description">
+              <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+          <a href="" class="project" data-type="mobile">
+            <img class="project__img" src="./project8.png" alt="" />
+            <div class="project__description">
+              <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  <section id="testimonials" class="section">
+    <h1>Testimonials</h1>
+    <h3>see what they say about me</h3>
+    <div class = 'testimonials'>
+      <div class="testimonial">
+        <img src="people.png" alt="" class="testimonial__avatar">
+        <div class="testimonial__speech-bubble">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga libero nulla eveniet aperiam laborum, quis provident quibusdam officiis reprehenderit, placeat neque perspiciatis vero explicabo tempora, dignissimos accusantium inventore ducimus! </p>
+          <p class="name"><a href="">Danny</a></p>
+        </div>
+      </div>
+    </div>
+    <div class = 'testimonials'>
+      <div class="testimonial">
+        <div class="testimonial__speech-bubble">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga libero nulla eveniet aperiam laborum, quis provident quibusdam officiis reprehenderit, placeat neque perspiciatis vero explicabo tempora, dignissimos accusantium inventore ducimus! </p>
+          <p class="name"><a href="">Danny</a></p>
+        </div>
+        <img src="people.png" alt="" class="testimonial__avatar">
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <h1 class="contact__title">Let's talk</h1>
+    <h2 class="contact__email">woo2851@gmail.com</h2>
+    <div class="contact__links">
+      <a href="https://github.com/woo2851/portpolio" target="">
+        <i class="fab fa-github"></i></a>
+      <a href="https://github.com/woo2851/portpolio" target="">
+        <i class="fab fa-linkedin"></i></a>
+      <p class="contact__rights">2021 Danny - All rights reserved</p>
+    </div>
+  </section>
 </body>
+<!-- Arrow up -->
+<button class="arrow__up"><i class="fas fa-arrow-up"></i></button>
+<script src="main.js"></script>
 </html>
