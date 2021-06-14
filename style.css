@@ -120,12 +120,15 @@ ul {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
-  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
 
 .navbar__menu__item {
   border-radius: 4px;
+}
+
+.navbar__menu__item.active {
+  border: 1px solid white;
 }
 
 .navbar__menu__item:hover {
@@ -519,6 +522,9 @@ ul {
   pointer-events: auto;
 }
 
+.active {
+  border: 1px solid white;
+}
 /* For below 768px screen width */
 
 @media screen and (max-width: 768px) {
